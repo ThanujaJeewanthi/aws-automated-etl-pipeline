@@ -5,16 +5,16 @@
 ## 🧾 Project Overview
 
 This project implements a **fully automated serverless ETL pipeline**
-using Amazon Web Services (AWS).\
+using Amazon Web Services (AWS).
 Whenever a CSV file is uploaded into a specific folder in Amazon S3, the
 entire workflow executes automatically.
 
-1.  **S3** triggers a **Lambda** function\
-2.  Lambda starts a **Glue ETL job**\
-3.  Glue transforms the dataset\
-4.  Output is written to an S3 **/load** folder\
-5.  **EventBridge** listens for Glue job status\
-6.  **SNS** sends an email notification\
+1.  **S3** triggers a **Lambda** function
+2.  Lambda starts a **Glue ETL job**
+3.  Glue transforms the dataset
+4.  Output is written to an S3 **/load** folder
+5.  **EventBridge** listens for Glue job status
+6.  **SNS** sends an email notification
 7.  **CloudWatch** logs the entire workflow
 
 The pipeline is fully automated, event‑driven, and serverless.
@@ -30,12 +30,12 @@ The pipeline is fully automated, event‑driven, and serverless.
 
 ## 🧩 AWS Services Used
 
--   Amazon S3\
--   AWS Lambda\
--   AWS Glue\
--   Amazon EventBridge\
--   Amazon SNS\
--   AWS CloudWatch\
+-   Amazon S3
+-   AWS Lambda
+-   AWS Glue
+-   Amazon EventBridge
+-   Amazon SNS
+-   AWS CloudWatch
 -   IAM
 
 ------------------------------------------------------------------------
@@ -69,6 +69,8 @@ def lambda_handler(event, context):
 ------------------------------------------------------------------------
 
 ⚙️ How the Pipeline Works (Step-by-Step)
+
+
 1️⃣ Create S3 Bucket Structure
 
 extract/ — upload raw CSV files
