@@ -149,19 +149,19 @@ EventBridge rule invocations
 
 ## 🚀 Deployment Steps
 
-1.  Create S3 bucket with `extract/` and `load/` folders\
-2.  Create Lambda function & add S3 trigger\
-3.  Build Glue ETL job using Visual ETL\
-4.  Create SNS topic and subscription\
-5.  Create EventBridge rule for Glue Job State Change\
+1.  Create S3 bucket with `extract/` and `load/` folders
+2.  Create Lambda function & add S3 trigger
+3.  Build Glue ETL job using Visual ETL
+4.  Create SNS topic and subscription
+5.  Create EventBridge rule for Glue Job State Change
 6.  Upload a CSV file to test end‑to‑end automation
 
 ------------------------------------------------------------------------
 
 ## 🎯 Status
 
-✔ Fully automated\
-✔ Email notifications working\
+✔ Fully automated
+✔ Email notifications working
 ✔ Logs available in CloudWatch
 
 ------------------------------------------------------------------------
